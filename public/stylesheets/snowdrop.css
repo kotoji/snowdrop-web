@@ -45,7 +45,9 @@
 }
 
 .title h1 {
+    color: #fcfcfc;
     font-size: 48px;
+    text-shadow: 3px 3px 5px #005555;
 }
 
 .contents {
