@@ -1,0 +1,61 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>@title</title>
+    <meta name="keywords" content="ECO,スノードロップ,エミル・クロニクル・オンライン" />
+    <meta name="description" content="エミル・クロニクル・オンラインFreeziaサーバーで活動しているリング、スノードロップのサイトです。" />
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/bootstrap.min.css")">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/snowdrop.css")">
+
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+    <script src="@routes.Assets.at("javascripts/bootstrap.min.js")" type="text/javascript"></script>
+    <script src="@routes.Assets.at("javascripts/footerFixed.js")" type="text/javascript"></script>
+  </head>
+  <body>
+  <div class="snowdrop">
+  <div class="container snow-container snow-style-header">
+  <header>
+    <div class="container title">
+      <h1>スノードロップ</h1>
+    </div> 
+  </header>
+  </div> <!-- snow-container -->
+  <div class="snow-style-contents">
+  <div class="container">
+  <div class="snow-solid-box">
+  <div class="row">
+    <div class="col-md-3 col-sm-3">
+      めにゅー
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>About</li>
+        <li>Member</li>
+      </ul>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div>
+    <div class="col-md-9 col-sm-9">
+      @content
+    </div>
+  </div> <!-- row -->
+  </div> <!-- snow-solid-box -->
+  </div> <!-- container -->
+  </div> <!-- snow-style-gray -->
+  <footer class="snow-style-prefooter">
+    <div class="container snow-text-small">
+      このページ内におけるECOから転載された全て のコンテンツの著作権につきましては 株式会社ブロッコリーとガンホー・オンライン・エンターテイメント株式会社および株式会社ヘッドロックに帰属します。<br />
+      なお、当ページに掲載しているコンテンツの再利用（再転載・配布など）は、禁止しています。<br />
+      無断転載・引用はご遠慮ください。<br />
+    </div>
+    <div class="footer">
+      スノードロップ - (C)2014 snowdrop all right reserved.
+    </div>
+  </footer>
+  </div> <!-- snowdrop -->
+  </body>
+</html>

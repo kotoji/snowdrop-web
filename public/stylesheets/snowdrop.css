@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Anzu';
+    src: url("../fonts/anzu.woff") format("woff"),
+         url("../fonts/anzu.ttf")  format("truetype");
+}
+
+.snow-container {
+    width: 100%;
+}
+
+.snow-style-header {
+    background-color: #32cd32;
+}
+
+.snow-style-contents {
+    /*background-color: #ededed;*/
+    padding: 0px, 0px;
+}
+
+.snow-style-contents a {
+    color: #3cb371;
+}
+
+.snow-style-prefooter {
+    background-color: #aaaaaa;
+    color: #555555;
+}
+
+.snow-solid-box {
+    background: #ffffff;
+    padding: 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.snow-roundly-box {
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 20px 5px;
+    margin: 40px 0px 40px 0px;
+}
+
+.title {
+    color: #ffffff;
+    text-align: left;
+}
+
+.title h1 {
+    font-size: 48px;
+}
+
+.contents {
+
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    background: #444444;
+    padding: 10px;
+}
+
+.snowdrop {
+    font-family: 'Anzu';
+    font-size: 20px;
+    color: #8a8a8a;
+}
+
+.snow-text-small {
+    font-size: 16px;
+}
