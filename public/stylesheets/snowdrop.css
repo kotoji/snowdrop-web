@@ -68,6 +68,15 @@
     font-size: 20px;
     color: #8a8a8a;
 }
+.snowdrop h1 {
+    font-size: 48px;
+}
+.snowdrop h2 {
+    font-size: 36px;
+}
+.snowdrop h3 {
+    font-size: 28px;
+}
 
 .snow-text-small {
     font-size: 16px;
