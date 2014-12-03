@@ -9,7 +9,7 @@ GET     /about                      controllers.Application.about
 GET     /member                     controllers.Application.member
 GET     /gallery                    controllers.Application.gallery
 GET     /link                       controllers.Application.link
-GET     /blog                       controllers.Application.blog
+GET     /blog                       controllers.Blog.index
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

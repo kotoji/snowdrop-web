@@ -25,7 +25,4 @@ object Application extends Controller {
     Ok(views.html.link())
   }
 
-  def blog = Action {
-    Ok(views.html.blog())
-  }
 }
