@@ -14,7 +14,7 @@ object Application extends Controller {
   }
 
   def member = Action {
-    Ok(views.html.member())
+    Ok(views.html.member("test"))
   }
 
   def gallery = Action {

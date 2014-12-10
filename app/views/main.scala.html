@@ -13,12 +13,15 @@
     <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/bootstrap.min.css")">
     <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/snowdrop.css")">
     <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/lightbox.css")">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/jquery.bxslider.css")">
 
     <link rel="shortcut icon" href="@routes.Assets.at("images/favicon.ico")">
     <script src="@routes.Assets.at("javascripts/jquery-1.11.1.min.js")" type="text/javascript"></script>
     <script src="@routes.Assets.at("javascripts/bootstrap.min.js")" type="text/javascript"></script>
     <script src="@routes.Assets.at("javascripts/footerFixed.js")" type="text/javascript"></script>
     <script src="@routes.Assets.at("javascripts/lightbox_plus_min.js")" type="text/javascript"></script>
+    <script src="@routes.Assets.at("javascripts/jquery.bxslider.min.js")" type="text/javascript"></script>
+    <script src="@routes.Assets.at("javascripts/snowdrop.js")" type="text/javascript"></script>
     <script>
       Spica.Event.run(function() {
         new Lightbox({
@@ -51,44 +54,24 @@
   <div class="container">
   <div class="snow-solid-box">
   <div class="row">
-    <div class="col-md-3 col-sm-3">
+    <div class="col-md-2 col-sm-2 snow-center">
       <h3>めにゅー</h3>
-      <ul class="nav">
-        <li><a href="@if(uri=="home") {
-            #
-        } else {
-            @routes.Application.index()
-        }">Home</a></li>
-        <li><a href="@if(uri=="about") {
-            #
-        } else {
-            @routes.Application.about()
-        }">About</a></li>
-        <li><a href="@if(uri=="member") {
-            #
-        } else {
-            @routes.Application.member()
-        }">Member</a></li>
-        <li><a href="@if(uri=="blog") {
-            #
-        } else {
-            @routes.Blog.index()
-        }">Blog</a></li>
-        <li><a href="@if(uri=="gallery") {
-            #
-        } else {
-            @routes.Application.gallery()
-        }">Gallery</a></li>
-        <li><a href="@if(uri=="link") {
-            #
-        } else {
-            @routes.Application.link()
-        }">Link</a></li>
-      </ul>
+      <div class="snow-menu-box">
+        <ul class="nav">
+          <li><a href="@if(uri=="home") {#} else {@routes.Application.index()}">Home</a></li>
+          <li><a href="@if(uri=="about") {#} else {@routes.Application.about()}">About</a></li>
+          <li><a href="@if(uri=="member") {#} else {@routes.Application.member()}">Member</a></li>
+          <li><a href="@if(uri=="blog") {#} else {@routes.Blog.index()}">Blog</a></li>
+          <li><a href="@if(uri=="gallery") {#} else {@routes.Application.gallery()}">Gallery</a></li>
+          <li><a href="@if(uri=="link") {#} else {@routes.Application.link()}">Link</a></li>
+        </ul>
+      </div>
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>
-    <div class="col-md-9 col-sm-9">
-      @content
+    <div class="col-md-10 col-sm-10">
+      <div @if(uri!="home"){class="snow-content-wrapper"}>
+        @content
+      </div>
     </div>
   </div> <!-- row -->
   </div> <!-- snow-solid-box -->

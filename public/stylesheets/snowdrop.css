@@ -39,6 +39,21 @@
     margin: 40px 0px 40px 0px;
 }
 
+.snow-menu-box {
+    border-radius: 5px;
+    /*border: solid 2px #aa8c39;*/
+}
+
+.snow-center {
+    text-align: center;
+}
+
+.snow-content-wrapper {
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
 .title {
     color: #ffffff;
     text-align: left;
